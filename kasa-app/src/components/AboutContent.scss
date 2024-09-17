@@ -1,0 +1,21 @@
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    margin: 45px;
+    align-items: center;
+    &__categories {
+      width: 80%;
+      max-width: 1000px;
+   
+     
+    }
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .about-content {
+      padding: 0 10px;
+    }
+  }
