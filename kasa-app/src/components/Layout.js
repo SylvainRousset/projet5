@@ -1,5 +1,5 @@
-// src/components/Layout.js
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 
 const Layout = ({ children }) => {
   return (
@@ -7,12 +7,12 @@ const Layout = ({ children }) => {
       <header>
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
           </ul>
         </nav>
       </header>
-      <main>{children}</main>
+      <main>{children}</main> {/* Affichage  dynamique */}
       <footer>
         <p>Footer content</p>
       </footer>
