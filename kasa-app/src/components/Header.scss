@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 45px 0 45px;
+  
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
+  
+    &__logo {
+      img {
+        width: 150px;
+  
+        @media (max-width: 768px) {
+          width: 100px; // Réduire la taille du logo sur mobile
+        }
+      }
+    }
+  
+    &__nav {
+      display: flex;
+      align-items: center;
+  
+      a {
+        margin-left: 40px;
+        text-decoration: none;
+        color: #000;
+        font-size: 24px; 
+        font-weight: 500;
+  
+        @media (max-width: 768px) {
+          margin-left:20px; 
+          font-size: 12px; 
+        }
+  
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+    
