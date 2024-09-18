@@ -1,0 +1,132 @@
+.property-page {
+    margin: 45px;
+    display: flex;
+    flex-direction: column;
+  
+    .property-details {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      
+      @media (max-width: 768px) {
+            flex-direction: column;
+      }
+      &__main {
+        h1 {
+          font-size: 36px;
+          font-weight: 500;
+          color: #FF6060;
+          margin-bottom: 10px;
+          @media (max-width: 768px) {
+            font-size: 18px;
+          }
+        }
+  
+        p {
+          font-size: 18px;
+          color: black;
+          @media (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+  
+        .tags {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 20px;
+  
+          .tag {
+            background-color: #FF6060;
+            color: white;
+            font-size: 14px;
+            padding: 5px 15px;
+            border-radius: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            @media (max-width: 768px) {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+  
+      &__host {
+        text-align: right;
+
+        @media (max-width: 768px) {
+            flex-direction: row;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .host-info {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          margin-bottom: 20px;
+
+          @media (max-width: 768px) {
+            order: 2;
+        }
+
+          p {
+            margin-right: 10px;
+            font-size: 18px;
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
+          }
+  
+          img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            @media (max-width: 768px) {
+              width: 32px;
+              height: 32px;
+            }
+          }
+        
+        }
+  
+        .rating {
+          .star {
+            font-size: 36px;
+            color: #E3E3E3;
+  
+            &.filled {
+              color: #FF6060;
+           
+            }
+            @media (max-width: 768px) {
+              font-size: 18px;
+            }
+          }
+          
+      
+        }
+      }
+    }
+  
+    .property-description {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+  }
+      &__item {
+        width: 40%;
+        @media (max-width: 768px) {
+          width: 100%;
+    }
+       
+      }
+
+    
+    }
+  }
