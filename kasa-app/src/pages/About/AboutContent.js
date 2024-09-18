@@ -1,9 +1,9 @@
 // src/components/AboutContent.jsx
 import React from 'react';
-import Banner from '../components/Banner';
-import Collapse from './Collapse';
+import Banner from '../../components/common/Banner';
+import Collapse from '../../components/common/Collapse';
 import './AboutContent.scss';
-import bannerImage from '../assets/images/backgrounds/background_about.png';
+import bannerImage from '../../assets/images/backgrounds/background_about.png';
 
 const AboutContent = () => {
   const categories = [
