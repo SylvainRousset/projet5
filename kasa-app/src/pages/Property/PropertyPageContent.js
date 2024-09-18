@@ -13,7 +13,9 @@ const PropertyPage = () => {
   const property = properties.find(p => p.id === id);
 
   useEffect(() => {
-   
+    if (!property) {
+      navigate('/error');
+    }
   }, [property, navigate]);
 
   if (!property) {
