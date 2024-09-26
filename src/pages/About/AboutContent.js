@@ -3,7 +3,7 @@ import React from 'react';
 import Banner from '../../components/common/Banner';
 import Collapse from '../../components/common/Collapse';
 import './AboutContent.scss';
-import bannerImage from '../../assets/images/backgrounds/background_about.png';
+import bannerImage from '../../assets/images/backgrounds/background_about.webp';
 
 const AboutContent = () => {
   const categories = [

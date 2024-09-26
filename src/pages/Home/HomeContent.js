@@ -3,7 +3,7 @@ import Banner from '../../components/common/Banner';
 import properties from '../../data/properties.json'; 
 import './HomeContent.scss';
 import Card from '../../components/cards/Card';
-import bannerImage from '../../assets/images/backgrounds/background-home.png';  
+import bannerImage from '../../assets/images/backgrounds/background-home.webp';  
 
 const HomeContent = () => {
   return (
